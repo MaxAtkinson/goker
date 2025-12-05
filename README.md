@@ -1,8 +1,8 @@
 # Goker
 
 [![Tests](https://github.com/MaxAtkinson/goker/actions/workflows/test.yml/badge.svg)](https://github.com/MaxAtkinson/goker/actions/workflows/test.yml)
-[![codecov](https://codecov.io/gh/MaxAtkinson/goker/branch/main/graph/badge.svg)](https://codecov.io/gh/MaxAtkinson/goker)
 [![Go Reference](https://pkg.go.dev/badge/github.com/MaxAtkinson/goker.svg)](https://pkg.go.dev/github.com/MaxAtkinson/goker)
+![Coverage](https://img.shields.io/badge/coverage-99.1%25-brightgreen)
 
 A lightweight Go package for Texas Hold'em poker hand evaluation and comparison.
 
