@@ -2,7 +2,7 @@
 
 [![Tests](https://github.com/MaxAtkinson/goker/actions/workflows/test.yml/badge.svg)](https://github.com/MaxAtkinson/goker/actions/workflows/test.yml)
 [![Go Reference](https://pkg.go.dev/badge/github.com/MaxAtkinson/goker.svg)](https://pkg.go.dev/github.com/MaxAtkinson/goker)
-![Coverage](https://img.shields.io/badge/coverage-99.1%25-brightgreen)
+![Coverage](https://img.shields.io/badge/coverage-98.2%25-brightgreen)
 
 A lightweight Go package for Texas Hold'em poker hand evaluation and comparison.
 
@@ -19,6 +19,8 @@ go get github.com/MaxAtkinson/goker
 - Hand comparison with tiebreakers
 - Full Texas Hold'em game simulation
 - Efficient binary arithmetic evaluation
+- **Parallel processing** - concurrent hand evaluation with goroutines
+- **Equity calculator** - Monte Carlo simulation for hand equity
 
 ## Usage
 
