@@ -68,10 +68,21 @@ func TestDeckRemaining(t *testing.T) {
 		t.Errorf("Remaining() returned %d cards, want 52", len(remaining))
 	}
 
-	// Modify remaining shouldn't affect deck
-	remaining[0] = NewCard(Two, Clubs)
+	// Store original first card
+	originalFirst := remaining[0]
+
+	// Modify remaining - pick a card that's definitely different
+	var differentCard Card
+	if originalFirst.Rank == Ace && originalFirst.Suit == Spades {
+		differentCard = NewCard(Two, Clubs)
+	} else {
+		differentCard = NewCard(Ace, Spades)
+	}
+	remaining[0] = differentCard
+
+	// Get remaining again - should still have original card
 	newRemaining := deck.Remaining()
-	if newRemaining[0].Rank == Two && newRemaining[0].Suit == Clubs {
+	if newRemaining[0] != originalFirst {
 		t.Error("Remaining() should return a copy, not the original slice")
 	}
 }
